@@ -1,1 +1,1 @@
-# practica1
+#Algebra abstracta
