@@ -12,6 +12,7 @@ using namespace std;
 int main()
 {
   int x;
+  int aea;
   string n;
   string m;
   string sifrado;
@@ -21,6 +22,16 @@ int main()
   getline(cin, m);
   cout << "seleccione el alfabeto: (1)ASCCI,(2)HEX,(3)NUMERICO" << endl;
   cin >> x;
-  cifrado p1 = cifrado(x, m,n,sifrado);
-  p1.cifrar();
+  cout << "seleccione(1) si va a cifrar o (2) si va a decifrar" << endl;
+  cin >> aea;
+  if(aea==1)
+  {
+    cifrado p1 = cifrado(x, m,n,sifrado);
+    p1.cifrar();
+  }
+  else if(aea==2)
+  {
+    cifrado p1 = cifrado(x, m,n,sifrado);
+    p1.decifrar();
+  }
 }
